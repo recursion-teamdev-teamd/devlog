@@ -1,0 +1,11 @@
+class GamblePlayer extends Player{
+  -house: Player 
+  -chips: number
+  -bet: number
+  +getBet(): number
+  +setBet(): void
+  +getChips(): number
+  +setChips(): void
+  {abstract}getHandScore(): number
+  {abstract}updateChips(): void
+}

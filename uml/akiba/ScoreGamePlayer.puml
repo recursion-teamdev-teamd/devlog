@@ -1,0 +1,6 @@
+class ScoreGamePlayer extends Player{
+  -score: number
+  +getScore(): number
+  {abstract}setScore(): void
+}
+

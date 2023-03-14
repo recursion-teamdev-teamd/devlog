@@ -1,0 +1,28 @@
+class RummyPlayerAction extends PlayerAction{
+  {static}hit: string
+  {static}attach: string
+  {static}meld: string
+  {static}discard: string
+  {static}rummy: string
+  {static}waiting: string
+}
+
+class RummyTable extends TurnGameTable{ 
+  -meldArea: Card[]
+  -discardPile: Card[]
+  +canHitCard(): boolean
+  +hitFromDeck(player: RummyPlayer): void
+  +hitFromPile(player: RummyPlayer): void
+  +attachCard(player: RummyPlayer): void
+  +meldCard(player: RummyPlayer): void
+  +discardCard(player: RummyPlayer): void
+  +rummy(player: RummyPlayer): void
+}
+
+class RummyPlayer extends ScoreGamePlayer{
+  +canAttachCard(meldArea: Card[]): boolean
+  +canMeldCard(meldArea: Card[]): boolean
+  +canRummy(): boolean
+  +canDiscardCard(): boolean
+  +getPenaltyScore(): number
+}

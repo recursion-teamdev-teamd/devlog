@@ -1,0 +1,12 @@
+class PokerPlayerAction extends AbstractPokerPlayerAction{
+  {static}betOneChip: string
+  {static}changeCards: string
+}
+
+class PokerTable extends AbstractPokerGambleTable{ 
+  +betOneChip(player: Player):  void
+  +changeCards(player: Player , toChangeCards: Cards[]): void
+}
+
+
+class PokerPlayer extends AbstractPokerGamblePlayer{}

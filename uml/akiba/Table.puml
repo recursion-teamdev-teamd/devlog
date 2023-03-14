@@ -1,0 +1,21 @@
+class Table{
+  -deck: Deck[]
+  -players: Player[]
+  -gamePhase: string
+  -gameResult: string
+  -resultsLog: string[]
+  -isRoundOver: boolean
+  +clearTableForNewGame(): void 
+  {abstract}assignPlayersHand(): void
+  +getGamePhase(): string
+  +setGamePhase(): string
+  +getTurnPlayer(): Player
+  +getUser(): Player
+  {abstract}initDeck(): void
+  +getIsRoundOver(): void
+  {abstract}setIsRoundOver(): void
+  {abstract}setPlayersActionRoundOver(): void
+  +processAfterRoundOver(): void
+  +getGameResult(): string
+  {abstract}setGameResult(): void
+}

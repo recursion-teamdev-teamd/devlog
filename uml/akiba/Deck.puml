@@ -1,0 +1,6 @@
+class Deck{
+  -cards: Cards[]
+  -shuffleDeck: void
+  -resetDeck: void
+  -drawOne(): Card
+}

@@ -1,0 +1,3 @@
+class GamePhase{
+  {static}roundOver: string
+}

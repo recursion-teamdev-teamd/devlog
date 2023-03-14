@@ -1,0 +1,8 @@
+class Card{
+  -suit: string
+  -rank: string
+  -imgUrl: string
+  +getSuit(): string
+  +getRank(): string
+  +getImgUrl(): string
+}

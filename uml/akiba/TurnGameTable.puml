@@ -1,0 +1,7 @@
+class TurnGameTable extends Table{
+  -turnCounter: number
+  +getTurnCounter(): number
+  +setTurnCounter(): void
+  +inclementTurnCounter(): void
+  +onLastPlayer(player: Player): boolean
+}
