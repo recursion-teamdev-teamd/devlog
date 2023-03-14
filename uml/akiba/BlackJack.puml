@@ -22,3 +22,7 @@ class BlackJackPlayer extends GamblePlayer{
   +canDouble(): boolean
   +canHit(): boolean
 }
+
+
+  BlackJackTable *-- BlackJackPlayer :contains
+  BlackJackPlayerAction -- BlackJackPlayerAction

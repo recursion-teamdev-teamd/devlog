@@ -26,3 +26,6 @@ class RummyPlayer extends ScoreGamePlayer{
   +canDiscardCard(): boolean
   +getPenaltyScore(): number
 }
+
+  RummyTable *-- RummyPlayer :contains
+  RummyPlayer -- RummyPlayerAction

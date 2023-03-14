@@ -2,3 +2,5 @@ class GambleTable extends TurnGameTable{
   -betDenominations: number[]
   {abstract}hit(player: Player)
 }
+   GambleTable *-- GamblePlayer :contains
+   GamblePlayer -- GambleGamePhase

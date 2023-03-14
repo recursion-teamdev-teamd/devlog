@@ -6,3 +6,7 @@ class TexasPokerTable extends GambleTable{
 
 }
 class TexasPokerPlayer extends GamblePlayer{}
+
+
+ TexasPokerTable *-- TexasPokerPlayer
+ TexasPokerPlayer -- TexasPokerPlayerAction

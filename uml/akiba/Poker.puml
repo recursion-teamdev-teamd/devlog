@@ -3,10 +3,13 @@ class PokerPlayerAction extends AbstractPokerPlayerAction{
   {static}changeCards: string
 }
 
-class PokerTable extends AbstractPokerGambleTable{ 
+class PokerTable extends AbstractPokerTable{ 
   +betOneChip(player: Player):  void
   +changeCards(player: Player , toChangeCards: Cards[]): void
 }
 
 
-class PokerPlayer extends AbstractPokerGamblePlayer{}
+class PokerPlayer extends AbstractPokerPlayer{}
+
+PokerTable *-- PokerPlayer
+PokerPlayer -- PokerPlayerAction
