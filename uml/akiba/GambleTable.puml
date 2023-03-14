@@ -1,0 +1,4 @@
+class GambleTable extends TurnGameTable{
+  -betDenominations: number[]
+  {abstract}hit(player: Player)
+}

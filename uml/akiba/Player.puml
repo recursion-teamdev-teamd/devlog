@@ -1,0 +1,13 @@
+abstract class Player{
+  -id: number
+  -name: string
+  -playerType: string
+  -playerAction: string
+  -hand: Card[]
+  +setHand(): void
+  +getHand(): Card[]
+  +getId(): number
+  +getPlayerAction(): string
+  +setPlayerAction(): void
+  +clearHand(): void
+}

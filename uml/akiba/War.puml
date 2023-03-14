@@ -1,0 +1,24 @@
+class WarGameResult extends GameResult{
+  -draw: string
+}
+
+
+class WarPlayerAction extends PlayerAction{
+  {static}deal: string
+}
+class WarPlayer extends ScoreGamePlayer{
+  -dealingCard: Card
+  +reduceHand(): void
+  +getDealingCard(): Card
+  +setDealingCard(): void
+
+}
+class WarTable extends Table{
+  -host: Player
+  -hostDealingCards: Card[]
+  -userDealingCards: Card[]
+  -hostGetCards: Card[]
+  -userGetCards: Card[]
+  +makeDeal(): void
+  +processAfterDeal(): void
+}

@@ -1,0 +1,13 @@
+class SpeedPlayerAction extends PlayerAction{
+  {static}acting: string
+
+}
+
+class SpeedTable extends Table{
+  -field1: Card[]
+  -field2: Card[]
+  -canContinue: boolean
+
+}
+
+class SpeedPlayer extends ScoreGamePlayer{}

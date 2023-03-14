@@ -1,0 +1,27 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+!include ./Player.puml
+!include ./Table.puml
+!include ./Deck.puml
+!include ./Card.puml
+!include ./GamePhase.puml
+!include ./ScoreGamePhase.puml
+!include ./GambleGamePhase.puml
+!include ./PlayerAction.puml
+!include ./ScoreGamePlayer.puml
+!include ./GambleTable.puml
+!include ./GamblePlayer.puml
+!include ./BlackJack.puml
+!include ./Poker.puml
+!include ./TexasPoker.puml
+!include ./War.puml
+!include ./Speed.puml
+!include ./Rummy.puml
+!include ./AbstractPoker.puml
+!include ./GameResult.puml
+Table *-- Deck
+Table *-- Player
+Deck *--  Card
+Player -- PlayerAction
+@enduml

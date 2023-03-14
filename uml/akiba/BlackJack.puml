@@ -1,0 +1,24 @@
+class BlackJackPlayerAction extends PlayerAction{
+  {static}bet: string
+  {static}double: string
+  {static}hit: string
+  {static}stand: string
+  {static}waiting: string
+}
+
+class BlackJackTable extends GambleTable{
+  -house: Player
+  +getHouse(): Player
+  +bet(player: Player): void
+  +double(player: Player): void
+  +hit(player: Player): void
+  +stand(player: Player): void
+  +waiting(player: Player): void
+}
+
+class BlackJackPlayer extends GamblePlayer{
+  +isBlackJack(): boolean
+  +canBet(): boolean
+  +canDouble(): boolean
+  +canHit(): boolean
+}

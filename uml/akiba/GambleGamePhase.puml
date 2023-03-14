@@ -1,0 +1,4 @@
+class GambleGamePhase extends GamePhase{
+  {static}betting: string
+  {static}acting: string
+}

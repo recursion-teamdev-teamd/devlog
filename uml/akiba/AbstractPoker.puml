@@ -1,0 +1,23 @@
+class AbstractPokerPlayerAction extends PlayerAction{
+  {static}call: string
+  {static}raise: string
+  {static}fold: string
+  {static}waiting: string
+}
+
+class AbstractPokerTable extends GambleTable{ 
+  -lastRaisePlayerId: number
+  +getLastRaisePlayerId(): number
+  +setLastRaisePlayerId(): void
+  +call(player: Player,callAmount: number): void
+  +raise(player: Player,raiseAmount: number): void
+  +fold(player: Player): void
+  +waiting(player: Player): void
+}
+
+
+class AbstractPokerPlayer extends GamblePlayer{
+  +canCall(callAmount: number): boolean
+  +canRaise(raiseAmount: number): boolean
+  +setIsRaise(): void
+}
