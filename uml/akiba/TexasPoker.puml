@@ -1,5 +1,5 @@
 class TexasPokerPlayerAction extends PlayerAction{}
-class TexasPokerTable extends GambleTable{
+class TexasPokerTable extends AbstractPokerTable{
   -communityCards: Card[]
   +getCommunityCards(): Card[]
   +setCommunityCards(): void
