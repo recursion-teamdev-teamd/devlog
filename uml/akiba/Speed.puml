@@ -4,10 +4,19 @@ class SpeedPlayerAction extends PlayerAction{
 }
 
 class SpeedTable extends Table{
+  -house: Player
   -field1: Card[]
   -field2: Card[]
+  -houseFaceupCards: Card[]
+  -userFaceupCards: Card[]
   -canContinue: boolean
-
+  +restart(): void
+  +putCard(player: Player,card: Card)
 }
 
-class SpeedPlayer extends ScoreGamePlayer{}
+class SpeedPlayer extends Player{
+  +canPut(card: Card): boolean
+}
+
+SpeedTable *-- SpeedPlayer
+SpeedPlayer -- SpeedPlayerAction

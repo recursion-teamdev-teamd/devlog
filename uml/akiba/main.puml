@@ -20,8 +20,10 @@ hide circle
 !include ./Rummy.puml
 !include ./AbstractPoker.puml
 !include ./GameResult.puml
+!include ./TurnGameTable.puml
 Table *-- Deck
 Table *-- Player
+Table *-- GameResult
 Deck *--  Card
 Player -- PlayerAction
 @enduml

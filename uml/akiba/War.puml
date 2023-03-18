@@ -22,3 +22,6 @@ class WarTable extends Table{
   +makeDeal(): void
   +processAfterDeal(): void
 }
+  WarTable *-- WarGameResult 
+  WarTable *-- WarPlayer
+  WarPlayer -- WarPlayerAction

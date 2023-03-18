@@ -1,5 +1,4 @@
 class GamblePlayer extends Player{
-  -house: Player 
   -chips: number
   -bet: number
   +getBet(): number
